@@ -14,12 +14,10 @@
 var goodDrivingRecord = true;
 var age = 24;
 
-function determineRentalPrice() {
-  if (goodDrivingRecord && age >= 25) {
-    console.log('Customer should receive a rental discount.');
-  } else if (goodDrivingRecord || age >= 25) {
-    console.log('Customer should pay full rental price.');
-  } else {
-    console.log('Custome will need someone else to sign for rental.');
-  }
+if (goodDrivingRecord && age >= 25) {
+  console.log('Customer should receive a rental discount.');
+} else if (goodDrivingRecord || age >= 25) {
+  console.log('Customer should pay full rental price.');
+} else {
+  console.log('Custome will need someone else to sign for rental.');
 }
